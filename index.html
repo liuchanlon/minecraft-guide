@@ -1,0 +1,386 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Minecraft Guide Hub – Ultimate Crafting, Mobs, Enchanting & Survival Tips</title>
+ <meta name="description" content="Complete Minecraft guide: crafting recipes, mob encyclopedia, enchanting chart, potion brewing, biomes, farming, redstone and survival tips for 1.21. Your one-stop Minecraft reference.">
+ <meta name="keywords" content="Minecraft, guide, crafting, recipes, mobs, enchanting, potions, redstone, survival, biomes, farming, tips, 1.21">
+ <link rel="canonical" href="https://minecraftguidehub.com/">
+ <meta property="og:title" content="Minecraft Guide Hub – Ultimate Minecraft Reference">
+ <meta property="og:description" content="Complete Minecraft guide: crafting recipes, mob encyclopedia, enchanting chart, potion brewing, biomes, farming, redstone and survival tips.">
+ <meta property="og:type" content="website">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="Minecraft Guide Hub">
+ <meta name="twitter:description" content="Your complete Minecraft reference guide.">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+ <style>
+ *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+ :root{--bg:#f5f3ef;--bg-alt:#eeebe4;--card:#fff;--accent:#16a34a;--accent-light:#dcfce7;--accent2:#d97706;--accent2-light:#fef3c7;--accent3:#7c3aed;--accent3-light:#ede9fe;--text:#1f2937;--text2:#6b7280;--text3:#9ca3af;--border:#e5e7eb;--shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);--shadow-md:0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -1px rgba(0,0,0,.04);--shadow-lg:0 10px 15px -3px rgba(0,0,0,.08),0 4px 6px -2px rgba(0,0,0,.04);--radius:12px;--radius-sm:8px}
+ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+ .container{max-width:1200px;margin:0 auto;padding:0 20px}
+ header{background:#fff;border-bottom:1px solid var(--border);padding:14px 0;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);background:rgba(255,255,255,.92)}
+ .header-grid{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+ .logo{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;background:linear-gradient(135deg,#16a34a,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.logo span{font-size:13px;font-weight:400;-webkit-text-fill-color:var(--text3);display:block;margin-top:-2px}
+ .search-box{flex:1;max-width:360px;min-width:180px}.search-box input{width:100%;padding:10px 16px;border-radius:var(--radius-sm);border:1.5px solid var(--border);background:var(--bg-alt);color:var(--text);font-size:14px;outline:none;transition:all .2s;font-family:'Inter',sans-serif}.search-box input:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px rgba(22,163,74,.1)}.search-box input::placeholder{color:var(--text3)}
+ .layout{display:flex;gap:28px;padding:28px 0}
+ nav.sidebar{width:220px;flex-shrink:0;position:sticky;top:80px;align-self:start}nav.sidebar ul{list-style:none}nav.sidebar li{margin-bottom:2px}nav.sidebar a{display:block;padding:9px 14px;border-radius:var(--radius-sm);color:var(--text2);text-decoration:none;font-size:14px;font-weight:500;transition:all .2s}nav.sidebar a:hover{background:var(--accent-light);color:var(--accent)}nav.sidebar a.active{background:var(--accent-light);color:var(--accent);font-weight:600}.nav-category{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);padding:20px 14px 6px;font-weight:700}
+ main{flex:1;min-width:0}.section{display:none}.section.active{display:block;animation:fadeIn .3s ease}@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+ .section-title{font-size:26px;font-weight:800;margin-bottom:4px;color:var(--text)}.section-desc{color:var(--text2);margin-bottom:24px;font-size:15px}
+ .card{background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--border);margin-bottom:16px;box-shadow:var(--shadow);transition:box-shadow .2s}.card:hover{box-shadow:var(--shadow-md)}.card h3{font-size:17px;font-weight:700;margin-bottom:6px;color:var(--text)}.card h3 a{color:inherit;text-decoration:none}.card h3 a:hover{text-decoration:underline}.card p,.card li{color:var(--text2);font-size:14px;line-height:1.7}.card ul,.card ol{padding-left:20px}.card li{margin-bottom:3px}.tag{display:inline-block;background:var(--accent-light);color:var(--accent);padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;margin-right:4px;margin-bottom:4px}
+ .grid-2{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}.grid-3{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}.grid-4{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+ table{width:100%;border-collapse:collapse;font-size:14px;border-radius:var(--radius-sm);overflow:hidden}th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--border)}th{background:var(--accent-light);color:var(--accent);font-weight:600;white-space:nowrap;font-size:13px}td{color:var(--text2)}tr:last-child td{border-bottom:none}tr:hover td{background:rgba(22,163,74,.03)}
+ .recipe-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}.recipe-item{background:var(--card);border-radius:var(--radius-sm);padding:16px 12px;text-align:center;border:1px solid var(--border);box-shadow:var(--shadow);transition:all .2s;cursor:default}.recipe-item:hover{border-color:var(--accent);box-shadow:var(--shadow-md);transform:translateY(-2px)}.recipe-item h4{font-size:14px;font-weight:700;margin-bottom:2px;color:var(--text)}.recipe-item p{font-size:12px;color:var(--text3)}.recipe-icon{font-size:28px;margin-bottom:6px;display:block}
+ .hero{text-align:center;padding:40px 0 28px}.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:34px;font-weight:800;margin-bottom:10px}.hero h1 span{background:linear-gradient(135deg,#16a34a,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero p{color:var(--text2);font-size:16px;max-width:560px;margin:0 auto;line-height:1.6}.hero-stats{display:flex;gap:32px;justify-content:center;margin-top:28px;flex-wrap:wrap}.hero-stat{text-align:center;background:var(--card);padding:16px 24px;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);min-width:100px}.hero-stat div:first-child{font-size:26px;font-weight:800;background:linear-gradient(135deg,#16a34a,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero-stat div:last-child{font-size:13px;color:var(--text3);margin-top:2px;font-weight:500}
+ .callout{background:var(--accent3-light);border-left:4px solid var(--accent3);border-radius:var(--radius-sm);padding:16px 20px;margin-bottom:16px}.callout p{color:var(--text2);font-size:14px;line-height:1.6}.callout strong{color:var(--text)}
+ .toc{background:var(--bg-alt);border-radius:var(--radius-sm);padding:16px 20px;margin-bottom:20px;border:1px solid var(--border)}.toc strong{display:block;margin-bottom:8px;color:var(--text);font-size:12px;text-transform:uppercase;letter-spacing:1.5px}.toc a{color:var(--accent);text-decoration:none;font-size:14px;display:inline-block;padding:4px 12px 4px 0;font-weight:500}.toc a:hover{text-decoration:underline}
+ .ad-slot{background:var(--bg-alt);border:2px dashed var(--border);border-radius:var(--radius);text-align:center;padding:36px 20px;margin:24px 0;color:var(--text3);font-size:13px;transition:border .2s}.ad-slot:hover{border-color:var(--text3)}.ad-slot::before{content:"Ad";display:inline-block;background:var(--border);color:var(--text3);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:2px 8px;border-radius:4px;margin-bottom:8px}
+ footer{background:#fff;border-top:1px solid var(--border);padding:32px 0;margin-top:40px;text-align:center;color:var(--text3);font-size:13px}footer a{color:var(--accent);text-decoration:none;font-weight:500}footer a:hover{text-decoration:underline}
+ .bento{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.bento-item{background:var(--card);border-radius:var(--radius);padding:22px 18px;border:1px solid var(--border);box-shadow:var(--shadow);transition:all .25s;cursor:pointer;text-decoration:none;display:block}.bento-item:hover{border-color:var(--accent);box-shadow:var(--shadow-lg);transform:translateY(-4px)}.bento-item .emoji{font-size:30px;display:block;margin-bottom:10px}.bento-item h3{font-size:16px;font-weight:700;margin-bottom:4px;color:var(--text)}.bento-item p{font-size:13px;color:var(--text2);line-height:1.5}
+ .badge{display:inline-block;background:var(--accent2-light);color:var(--accent2);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-left:6px;text-transform:none;-webkit-text-fill-color:var(--accent2)}
+ h3{margin-top:20px;margin-bottom:12px;font-size:18px;font-weight:700;color:var(--text)}h3:first-child{margin-top:0}
+ .emoji-lg{font-size:40px;display:block;margin-bottom:4px}
+ @media(max-width:768px){nav.sidebar{display:none}.mobile-nav{display:flex;overflow-x:auto;gap:8px;padding:8px 0;margin-bottom:16px;-webkit-overflow-scrolling:touch}.mobile-nav a{white-space:nowrap;background:var(--card);padding:7px 14px;border-radius:20px;font-size:13px;color:var(--text2);text-decoration:none;border:1px solid var(--border);font-weight:500;flex-shrink:0}.mobile-nav a.active{background:var(--accent);color:#fff;border-color:var(--accent)}.bento{grid-template-columns:1fr 1fr}.hero h1{font-size:26px}.header-grid{gap:10px}.search-box{max-width:100%;min-width:0;order:3;flex-basis:100%}.hero-stats{gap:12px}}
+ @media(max-width:480px){.bento{grid-template-columns:1fr}.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.hero h1{font-size:22px}.hero-stat{padding:12px 16px;min-width:80px}.hero-stat div:first-child{font-size:22px}}
+ @media(min-width:769px){.mobile-nav{display:none}}
+ </style>
+ </head>
+ <body>
+ <header><div class="container header-grid"><div class="logo">Minecraft Guide Hub <span>Your complete Minecraft reference</span></div><div class="search-box"><input type="text" id="searchInput" placeholder="Search guides, recipes, mobs... (press Enter)"></div></div></header>
+ <div class="container layout">
+ <nav class="sidebar" id="sidebar"><ul>
+ <li class="nav-category">Guides</li>
+ <li><a href="#" data-section="home" class="active">🏠 Home</a></li>
+ <li><a href="#" data-section="crafting">🔨 Crafting Recipes</a></li>
+ <li><a href="#" data-section="mobs">🐉 Mob Encyclopedia</a></li>
+ <li><a href="#" data-section="enchanting">✨ Enchanting Guide</a></li>
+ <li><a href="#" data-section="potions">🧪 Potion Brewing</a></li>
+ <li><a href="#" data-section="biomes">🌲 Biomes Guide</a></li>
+ <li><a href="#" data-section="farming">🌾 Farming &amp; XP</a></li>
+ <li><a href="#" data-section="redstone">🔴 Redstone Basics</a></li>
+ <li><a href="#" data-section="survival">🏕️ Survival Tips</a></li>
+ <li><a href="#" data-section="nether">🔥 Nether &amp; End</a></li>
+ </ul></nav>
+ <div class="mobile-nav" id="mobileNav">
+ <a href="#" data-section="home" class="active">🏠 Home</a><a href="#" data-section="crafting">🔨 Crafting</a><a href="#" data-section="mobs">🐉 Mobs</a><a href="#" data-section="enchanting">✨ Enchanting</a><a href="#" data-section="potions">🧪 Potions</a><a href="#" data-section="biomes">🌲 Biomes</a><a href="#" data-section="farming">🌾 Farming</a><a href="#" data-section="redstone">🔴 Redstone</a><a href="#" data-section="survival">🏕️ Survival</a><a href="#" data-section="nether">🔥 Nether</a>
+ </div>
+ <main>
+ <!-- HOME -->
+ <section class="section active" id="s-home">
+ <div class="hero"><h1><span>Minecraft Guide Hub</span></h1><p>Your ultimate reference for crafting, mobs, enchanting, potions, biomes, redstone and survival — all in one place. Updated for Minecraft 1.21.</p><div class="hero-stats"><div class="hero-stat"><div>200+</div><div>Crafting Recipes</div></div><div class="hero-stat"><div>40+</div><div>Mobs</div></div><div class="hero-stat"><div>30+</div><div>Enchantments</div></div><div class="hero-stat"><div>20+</div><div>Potions</div></div></div></div>
+ <div class="bento">
+ <a class="bento-item" href="#" data-section="crafting"><span class="emoji">🔨</span><h3>Crafting Recipes <span class="badge">Popular</span></h3><p>Complete crafting guide: tools, weapons, armor, blocks, food and more.</p></a>
+ <a class="bento-item" href="#" data-section="mobs"><span class="emoji">🐉</span><h3>Mob Encyclopedia <span class="badge">Updated</span></h3><p>Every mob in Minecraft: spawn conditions, drops, behavior and combat tips.</p></a>
+ <a class="bento-item" href="#" data-section="enchanting"><span class="emoji">✨</span><h3>Enchanting Guide</h3><p>Full enchanting table chart, best enchantments for every item, anvil combos.</p></a>
+ <a class="bento-item" href="#" data-section="potions"><span class="emoji">🧪</span><h3>Potion Brewing</h3><p>Brewing guide from awkward potion to every effect. Ingredients and recipes.</p></a>
+ <a class="bento-item" href="#" data-section="biomes"><span class="emoji">🌲</span><h3>Biomes Guide</h3><p>Overworld, Nether and End biomes with mobs, structures and resources.</p></a>
+ <a class="bento-item" href="#" data-section="farming"><span class="emoji">🌾</span><h3>Farming &amp; XP</h3><p>Crop farming, animal breeding, XP farms and villager trading.</p></a>
+ <a class="bento-item" href="#" data-section="redstone"><span class="emoji">🔴</span><h3>Redstone Basics</h3><p>Redstone components, logic gates, simple machines and tutorials.</p></a>
+ <a class="bento-item" href="#" data-section="survival"><span class="emoji">🏕️</span><h3>Survival Tips</h3><p>First day guide, base building, exploration, combat strategies and more.</p></a>
+ <a class="bento-item" href="#" data-section="nether"><span class="emoji">🔥</span><h3>Nether &amp; End</h3><p>Nether biomes, fortresses, bastions, End dimension and dragon fight.</p></a>
+ </div>
+ <div class="ad-slot">AdSense auto ads or affiliate banners (e.g., Minecraft hosting, server deals)</div>
+ <div class="card" style="margin-top:16px"><h3>How to Use This Guide</h3><p>Browse by category using the sidebar. Each section is packed with search-friendly content including tables, stats and step-by-step instructions. Bookmark this page — we update it with every Minecraft release.</p><p style="margin-top:8px"><strong>Popular searches:</strong> <span class="tag"><a href="#" data-section="crafting" style="color:inherit;text-decoration:none">how to make a crafting table</a></span> <span class="tag"><a href="#" data-section="enchanting" style="color:inherit;text-decoration:none">best sword enchantments</a></span> <span class="tag"><a href="#" data-section="potions" style="color:inherit;text-decoration:none">invisibility potion recipe</a></span> <span class="tag"><a href="#" data-section="mobs" style="color:inherit;text-decoration:none">ender pearl farm</a></span> <span class="tag"><a href="#" data-section="nether" style="color:inherit;text-decoration:none">how to find ancient debris</a></span></p></div>
+ </section>
+ 
+ <!-- CRAFTING -->
+ <section class="section" id="s-crafting">
+ <h2 class="section-title">🔨 Crafting Recipes</h2>
+ <p class="section-desc">Every essential crafting recipe in Minecraft 1.21. Hover or tap any recipe for details.</p>
+ <div class="toc"><strong>Jump to:</strong><a href="#craft-tools">Tools &amp; Weapons</a><a href="#craft-armor">Armor</a><a href="#craft-blocks">Essential Blocks</a><a href="#craft-food">Food &amp; Items</a><a href="#craft-redstone">Redstone Components</a></div>
+ <h3 id="craft-tools">Tools &amp; Weapons</h3>
+ <div class="recipe-grid">
+ <div class="recipe-item"><span class="recipe-icon">⛏️</span><h4>Pickaxe</h4><p>3 material + 2 sticks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🪓</span><h4>Axe</h4><p>3 material + 2 sticks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🗡️</span><h4>Sword</h4><p>2 material + 1 stick</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🫏</span><h4>Shovel</h4><p>1 material + 2 sticks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🌾</span><h4>Hoe</h4><p>2 material + 2 sticks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🏹</span><h4>Bow</h4><p>3 string + 3 sticks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🔫</span><h4>Crossbow</h4><p>3 string + 2 sticks + 1 iron ingot</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🛡️</span><h4>Shield</h4><p>6 planks + 1 iron ingot</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🧭</span><h4>Fishing Rod</h4><p>3 sticks + 2 string</p></div>
+ <div class="recipe-item"><span class="recipe-icon">💎</span><h4>Enchanting Table</h4><p>4 obsidian + 2 diamonds + 1 book</p></div>
+ </div>
+ <div class="card" style="margin-top:16px"><h3>Tool Material Comparison</h3><table><thead><tr><th>Material</th><th>Durability</th><th>Mining Speed</th><th>Enchantability</th><th>Best For</th></tr></thead><tbody><tr><td>Wood</td><td>59</td><td>2.0</td><td>15</td><td>Early game / fuel</td></tr><tr><td>Stone</td><td>131</td><td>4.0</td><td>5</td><td>Early mining</td></tr><tr><td>Iron</td><td>250</td><td>6.0</td><td>14</td><td>Mid game standard</td></tr><tr><td>Gold</td><td>32</td><td>12.0</td><td>22</td><td>Fast mining / enchanting</td></tr><tr><td>Diamond</td><td>1561</td><td>8.0</td><td>10</td><td>End game general use</td></tr><tr><td>Netherite</td><td>2031</td><td>9.0</td><td>15</td><td>Best in slot</td></tr></tbody></table></div>
+ <h3 id="craft-armor" style="margin-top:24px">Armor</h3>
+ <div class="recipe-grid">
+ <div class="recipe-item"><span class="recipe-icon">🪖</span><h4>Helmet</h4><p>5 material</p></div>
+ <div class="recipe-item"><span class="recipe-icon">👕</span><h4>Chestplate</h4><p>8 material</p></div>
+ <div class="recipe-item"><span class="recipe-icon">👖</span><h4>Leggings</h4><p>7 material</p></div>
+ <div class="recipe-item"><span class="recipe-icon">👟</span><h4>Boots</h4><p>4 material</p></div>
+ </div>
+ <div class="card"><h3>Armor Protection Values</h3><table><thead><tr><th>Piece</th><th>Leather</th><th>Gold</th><th>Chain</th><th>Iron</th><th>Diamond</th><th>Netherite</th></tr></thead><tbody><tr><td>Helmet</td><td>1</td><td>2</td><td>2</td><td>2</td><td>3</td><td>3</td></tr><tr><td>Chestplate</td><td>3</td><td>5</td><td>5</td><td>6</td><td>8</td><td>8</td></tr><tr><td>Leggings</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td></tr><tr><td>Boots</td><td>1</td><td>1</td><td>1</td><td>2</td><td>3</td><td>3</td></tr><tr><td><strong>Total</strong></td><td><strong>7</strong></td><td><strong>11</strong></td><td><strong>12</strong></td><td><strong>15</strong></td><td><strong>20</strong></td><td><strong>20</strong></td></tr></tbody></table></div>
+ <h3 id="craft-blocks" style="margin-top:24px">Essential Blocks</h3>
+ <div class="recipe-grid">
+ <div class="recipe-item"><span class="recipe-icon">🪵</span><h4>Crafting Table</h4><p>4 planks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🔥</span><h4>Furnace</h4><p>8 cobblestone</p></div>
+ <div class="recipe-item"><span class="recipe-icon">📦</span><h4>Chest</h4><p>8 planks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🛏️</span><h4>Bed</h4><p>3 wool + 3 planks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">⬆️</span><h4>Ladder</h4><p>7 sticks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">📖</span><h4>Bookshelf</h4><p>3 books + 6 planks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">⛓️</span><h4>Anvil</h4><p>4 iron ingots + 3 iron blocks</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🪟</span><h4>Grindstone</h4><p>2 sticks + 2 planks + 1 stone slab</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🧱</span><h4>Smithing Table</h4><p>4 planks + 2 iron ingots</p></div>
+ <div class="recipe-item"><span class="recipe-icon">⚒️</span><h4>Stonecutter</h4><p>3 stone + 1 iron ingot</p></div>
+ </div>
+ <h3 id="craft-food" style="margin-top:24px">Food &amp; Items</h3>
+ <div class="recipe-grid">
+ <div class="recipe-item"><span class="recipe-icon">🍞</span><h4>Bread</h4><p>3 wheat</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🍪</span><h4>Cookie</h4><p>2 wheat + 1 cocoa beans</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🎂</span><h4>Cake</h4><p>3 wheat + 3 milk + 2 sugar + 1 egg</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🍲</span><h4>Mushroom Stew</h4><p>1 bowl + 1 red mushroom + 1 brown mushroom</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🥕</span><h4>Golden Carrot</h4><p>8 gold nuggets + 1 carrot</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🍎</span><h4>Golden Apple</h4><p>8 gold ingots + 1 apple</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🪣</span><h4>Bucket</h4><p>3 iron ingots</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🧭</span><h4>Compass</h4><p>4 iron ingots + 1 redstone</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🗺️</span><h4>Map</h4><p>8 paper + 1 compass</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🔦</span><h4>Torch</h4><p>1 coal/charcoal + 1 stick</p></div>
+ </div>
+ <h3 id="craft-redstone" style="margin-top:24px">Redstone Components</h3>
+ <div class="recipe-grid">
+ <div class="recipe-item"><span class="recipe-icon">🔴</span><h4>Redstone Dust</h4><p>Mined from redstone ore</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🚪</span><h4>Piston</h4><p>3 planks + 4 cobble + 1 iron + 1 redstone</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🔌</span><h4>Repeater</h4><p>2 redstone torches + 1 redstone + 3 stone</p></div>
+ <div class="recipe-item"><span class="recipe-icon">⚡</span><h4>Comparator</h4><p>3 redstone torches + 1 quartz + 3 stone</p></div>
+ <div class="recipe-item"><span class="recipe-icon">💡</span><h4>Redstone Lamp</h4><p>1 redstone + 1 glowstone</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🔧</span><h4>Observer</h4><p>6 cobble + 2 redstone + 1 quartz</p></div>
+ <div class="recipe-item"><span class="recipe-icon">🧲</span><h4>Hopper</h4><p>5 iron + 1 chest</p></div>
+ </div>
+ <div class="ad-slot">AdSense - Crafting Section</div>
+ </section>
+ 
+ <!-- MOBS -->
+ <section class="section" id="s-mobs">
+ <h2 class="section-title">🐉 Mob Encyclopedia</h2>
+ <p class="section-desc">Complete guide to every mob in Minecraft 1.21 — spawn conditions, drops, behavior and combat tips.</p>
+ <h3>Passive Mobs</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🐄 Cow</h3><p><strong>Drops:</strong> Beef (1-3), Leather (0-2). <strong>Breeding:</strong> Wheat. Cooked beef is a top food source. Leather for books and item frames.</p></div>
+ <div class="card"><h3>🐑 Sheep</h3><p><strong>Drops:</strong> Raw Mutton, Wool. <strong>Breeding:</strong> Wheat. Shear for up to 3 wool blocks without killing. Wool colors vary by biome.</p></div>
+ <div class="card"><h3>🐖 Pig</h3><p><strong>Drops:</strong> Raw Porkchop. <strong>Breeding:</strong> Carrots. Can be ridden with a saddle but speed is slow — best for food.</p></div>
+ <div class="card"><h3>🐔 Chicken</h3><p><strong>Drops:</strong> Feather (0-2), Raw Chicken. <strong>Breeding:</strong> Seeds. Lays eggs every 5-10 minutes. Auto chicken farms are easy.</p></div>
+ <div class="card"><h3>🐰 Rabbit</h3><p><strong>Drops:</strong> Rabbit Hide, Raw Rabbit. <strong>Breeding:</strong> Dandelions or carrots. Hide crafts into leather. Rare drop: Rabbit's Foot.</p></div>
+ <div class="card"><h3>🐱 Cat</h3><p><strong>Taming:</strong> Raw Cod/Salmon. Creepers avoid cats. Village cats spawn in villages with a wandering trader.</p></div>
+ <div class="card"><h3>🐶 Wolf</h3><p><strong>Taming:</strong> Bones. Once tamed, follows and attacks mobs you attack. Health increases to 40.</p></div>
+ <div class="card"><h3>🎠 Horse</h3><p><strong>Taming:</strong> Right-click repeatedly. Can be armored (leather/iron/diamond/gold) and bred with golden apples.</p></div>
+ <div class="card"><h3>🐟 Fish</h3><p><strong>Types:</strong> Cod, Salmon, Tropical Fish, Pufferfish. Caught with fishing rod. Tropical fish are decorative.</p></div>
+ </div>
+ <h3 style="margin-top:24px">Neutral Mobs</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🦙 Llama</h3><p>Spits at hostile mobs. Can be tamed and equipped with chests to form a caravan.</p></div>
+ <div class="card"><h3>🐻 Polar Bear</h3><p>Spawns in icy biomes. Protective if cubs are nearby.</p></div>
+ <div class="card"><h3>🐝 Bee</h3><p>Flies between flowers and pollinates. Aggressive when nest is broken.</p></div>
+ <div class="card"><h3>🕷️ Spider</h3><p>Neutral in daylight, hostile at night. Drops string and spider eye. Climbs walls.</p></div>
+ <div class="card"><h3>🦴 Skeleton Horse</h3><p>Spawns during thunderstorms. Can be tamed.</p></div>
+ <div class="card"><h3>🐬 Dolphin</h3><p>Ocean biomes. Leads you to underwater ruins if fed raw cod.</p></div>
+ </div>
+ <h3 style="margin-top:24px">Hostile Mobs</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🧟 Zombie</h3><p>Drops rotten flesh. 8% spawn with equipment. Villagers become zombie villagers.</p></div>
+ <div class="card"><h3>💀 Skeleton</h3><p>Shoots from range. Drops bones and arrows. Burns in daylight.</p></div>
+ <div class="card"><h3>🕸️ Cave Spider</h3><p>Mineshafts. Poison attack. Smaller than normal spiders.</p></div>
+ <div class="card"><h3>👻 Creeper</h3><p>Explodes when close. Drops gunpowder. Charged creepers drop mob heads.</p></div>
+ <div class="card"><h3>🪣 Enderman</h3><p>Attacks when looked at. Drops ender pearls. Teleports. Weak to water.</p></div>
+ <div class="card"><h3>🔥 Blaze</h3><p>Nether fortresses. Drops blaze rods. Essential for brewing.</p></div>
+ <div class="card"><h3>💀 Wither Skeleton</h3><p>Nether fortresses. Wither effect. Drops coal, bones, rare Wither Skull.</p></div>
+ <div class="card"><h3>🧙 Witch</h3><p>Throws splash potions. Drops redstone, glowstone, sugar, gunpowder.</p></div>
+ <div class="card"><h3>🐌 Slime</h3><p>Swamp biomes and deepslate layers. Drops slimeballs.</p></div>
+ <div class="card"><h3>🗿 Pillager</h3><p>Patrols and outposts. Part of raids. Drops crossbows.</p></div>
+ <div class="card"><h3>🦇 Phantom</h3><p>Spawns after 3+ sleepless nights. Drops phantom membrane.</p></div>
+ <div class="card"><h3>👹 Piglin Brute</h3><p>Bastion remnants. Always hostile. Toughest non-boss Nether mob.</p></div>
+ </div>
+ <h3 style="margin-top:24px">Bosses</h3>
+ <div class="grid-2">
+ <div class="card"><h3>🐉 Ender Dragon</h3><p>HP: 200. The End. Drops Dragon Egg, ~70 XP. Strategy: Destroy crystals, shoot from range, melee when perching.</p></div>
+ <div class="card"><h3>💀 Wither</h3><p>HP: 300 (Java) / 600 (Bedrock). 4 soul sand + 3 skulls. Drops Nether Star. Fight underground.</p></div>
+ </div>
+ <div class="ad-slot">AdSense - Mobs Section</div>
+ </section>
+ 
+ <!-- ENCHANTING -->
+ <section class="section" id="s-enchanting">
+ <h2 class="section-title">✨ Enchanting Guide</h2>
+ <p class="section-desc">Complete enchanting table chart, best enchantments for every item, anvil combos for Minecraft 1.21.</p>
+ <div class="callout"><p><strong>Pro tip:</strong> 15 bookshelves around enchanting table (one block away) max level cap to 30. Use lapis lazuli in second slot.</p></div>
+ <h3>Best Enchantments by Item</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🗡️ Sword</h3><p><strong>Sharpness V</strong> — +6.25 dmg/level<br><strong>Looting III</strong> — +3 extra drops<br><strong>Fire Aspect II</strong> — sets mobs on fire<br><strong>Sweeping Edge III</strong> — sweep damage</p></div>
+ <div class="card"><h3>⛏️ Pickaxe</h3><p><strong>Efficiency V</strong> — +25 mining speed<br><strong>Fortune III</strong> — ×2-4 drops<br><strong>Silk Touch</strong> — self-block mining<br><strong>Unbreaking III</strong></p></div>
+ <div class="card"><h3>🪖 Helmet</h3><p><strong>Protection IV</strong><br><strong>Aqua Affinity</strong> — normal underwater mining<br><strong>Respiration III</strong> — +45s underwater<br><strong>Unbreaking III</strong></p></div>
+ <div class="card"><h3>👕 Chestplate</h3><p><strong>Protection IV</strong><br><strong>Unbreaking III</strong><br><strong>Thorns III</strong> — damage return</p></div>
+ <div class="card"><h3>🏹 Bow</h3><p><strong>Power V</strong> — +150%<br><strong>Flame</strong> — fire arrows<br><strong>Infinity</strong> — infinite arrows<br><strong>Punch II</strong> — knockback</p></div>
+ <div class="card"><h3>👟 Boots</h3><p><strong>Protection IV</strong><br><strong>Feather Falling IV</strong> — no fall dmg<br><strong>Depth Strider III</strong> — fast underwater<br><strong>Soul Speed III</strong></p></div>
+ </div>
+ <div class="card" style="margin-top:16px"><h3>Enchanting Table Mechanics</h3><p>With 15 bookshelves: first option costs 2 lapis + levels 20-30, middle costs 2 lapis + 27-30, last costs 3 lapis + level 30. See bad roll? Enchant a cheap book to reroll. <strong>Mending:</strong> must be from trading, fishing or loot — not from table.</p></div>
+ <div class="ad-slot">AdSense - Enchanting Section</div>
+ </section>
+ 
+ <!-- POTIONS -->
+ <section class="section" id="s-potions">
+ <h2 class="section-title">🧪 Potion Brewing</h2>
+ <p class="section-desc">Complete brewing guide from awkward potion base to every effect. Includes ingredients, modifiers and splash variants.</p>
+ <div class="callout"><p><strong>Brewing fuel:</strong> Blaze powder. 1 powder = 20 brews.</p></div>
+ <table><thead><tr><th>Potion</th><th>Recipe</th><th>Effect</th><th>Max Duration</th></tr></thead><tbody>
+ <tr><td>Fire Resistance</td><td>Awkward + Magma Cream</td><td>Immune to fire/lava</td><td>8:00</td></tr>
+ <tr><td>Healing</td><td>Awkward + Glistering Melon</td><td>Instant +4 HP</td><td>Instant</td></tr>
+ <tr><td>Strength</td><td>Awkward + Blaze Powder</td><td>+3 attack damage</td><td>8:00</td></tr>
+ <tr><td>Speed</td><td>Awkward + Sugar</td><td>+20% movement</td><td>8:00</td></tr>
+ <tr><td>Night Vision</td><td>Awkward + Golden Carrot</td><td>Full brightness</td><td>8:00</td></tr>
+ <tr><td>Invisibility</td><td>Night Vision + Fermented Eye</td><td>Fully invisible</td><td>8:00</td></tr>
+ <tr><td>Water Breathing</td><td>Awkward + Pufferfish</td><td>Breathe underwater</td><td>8:00</td></tr>
+ <tr><td>Jump Boost</td><td>Awkward + Rabbit's Foot</td><td>+0.5 jump/level</td><td>8:00</td></tr>
+ <tr><td>Slow Falling</td><td>Awkward + Phantom Membrane</td><td>Slow descent, no fall dmg</td><td>4:00</td></tr>
+ <tr><td>Poison</td><td>Awkward + Spider Eye</td><td>DoT (non-lethal)</td><td>1:30</td></tr>
+ <tr><td>Weakness</td><td>Awkward + Fermented Eye</td><td>-4 attack damage</td><td>4:00</td></tr>
+ <tr><td>Slowness</td><td>Speed + Fermented Eye</td><td>-15% movement</td><td>4:00</td></tr>
+ </tbody></table>
+ <h3 style="margin-top:24px">Modifiers</h3>
+ <table><thead><tr><th>Modifier</th><th>Effect</th></tr></thead><tbody>
+ <tr><td>Redstone Dust</td><td>Extends duration (×1.7-2.6)</td></tr>
+ <tr><td>Glowstone Dust</td><td>Increases potency (II), reduces duration</td></tr>
+ <tr><td>Gunpowder</td><td>Creates Splash Potion (AOE throwable)</td></tr>
+ <tr><td>Dragon's Breath</td><td>Creates Lingering Potion (area cloud)</td></tr>
+ <tr><td>Fermented Spider Eye</td><td>Inverts effect (e.g. Speed → Slowness)</td></tr>
+ </tbody></table>
+ <div class="ad-slot">AdSense - Potions Section</div>
+ </section>
+ 
+ <!-- BIOMES -->
+ <section class="section" id="s-biomes">
+ <h2 class="section-title">🌲 Biomes Guide</h2>
+ <p class="section-desc">Explore every biome in Minecraft 1.21 — unique mobs, structures, resources and survival tips for each environment.</p>
+ <h3>Overworld Biomes</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🌲 Forest</h3><p>Wolves, bees nests, flowers. Oak and birch trees. Good starter biome.</p></div>
+ <div class="card"><h3>⛰️ Plains</h3><p>Horses, donkeys, villages. Easy building terrain.</p></div>
+ <div class="card"><h3>🏜️ Desert</h3><p>Husks, desert temples, villages. Sand, sandstone, cacti.</p></div>
+ <div class="card"><h3>⛰️ Mountains</h3><p>Goats, emerald ore, exposed caves. Best for mining.</p></div>
+ <div class="card"><h3>🌊 Ocean</h3><p>Warm/lukewarm/cold/frozen. Ruins, shipwrecks, coral, conduits.</p></div>
+ <div class="card"><h3>🏜️ Badlands</h3><p>Surface gold ore, terracotta, red sand. Passive mobs only.</p></div>
+ <div class="card"><h3>🌳 Taiga</h3><p>Foxes, wolves, spruce trees, berry bushes, villages.</p></div>
+ <div class="card"><h3>☕ Swamp</h3><p>Slimes (night), witches, swamp huts, clay, blue orchids.</p></div>
+ <div class="card"><h3>❄️ Snowy Tundra</h3><p>Polar bears, strays, igloos (with basement lab), packed ice.</p></div>
+ <div class="card"><h3>🍄 Mushroom Fields</h3><p>No hostile mobs! Mooshrooms, mycelium. Extremely rare.</p></div>
+ <div class="card"><h3>🌴 Jungle</h3><p>Ocelots, parrots, pandas, jungle temples, melons, cocoa.</p></div>
+ <div class="card"><h3>🌸 Cherry Grove</h3><p>Pink cherry trees, pink petals. Rare. Beautiful building spot.</p></div>
+ </div>
+ <h3 style="margin-top:24px">Nether Biomes</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🔥 Nether Wastes</h3><p>Classic Nether. Piglins, ghasts, magma cubes, endermen.</p></div>
+ <div class="card"><h3>🌋 Crimson Forest</h3><p>Hoglins, piglins. Crimson wood. Relatively safe.</p></div>
+ <div class="card"><h3>🌊 Warped Forest</h3><p>Endermen only — no hostile mobs! Safe haven.</p></div>
+ <div class="card"><h3>🪦 Soul Sand Valley</h3><p>Skeletons, ghasts. Soul sand, soul soil, basalt.</p></div>
+ <div class="card"><h3>🌋 Basalt Deltas</h3><p>Magma cubes abundant. Basalt, blackstone.</p></div>
+ </div>
+ <h3 style="margin-top:24px">End Biomes</h3>
+ <div class="grid-2">
+ <div class="card"><h3>🏝️ Main End Island</h3><p>Obsidian pillars, end crystals, Ender Dragon. Exit portal after dragon defeat.</p></div>
+ <div class="card"><h3>🌌 Outer Islands</h3><p>Chorus plants, end cities, end ships with elytra. Shulkers.</p></div>
+ </div>
+ <div class="ad-slot">AdSense - Biomes Section</div>
+ </section>
+ 
+ <!-- FARMING -->
+ <section class="section" id="s-farming">
+ <h2 class="section-title">🌾 Farming &amp; XP</h2>
+ <p class="section-desc">Crop farming, animal husbandry, XP farms, villager trading and automation.</p>
+ <h3>Crop Farming</h3>
+ <table><thead><tr><th>Crop</th><th>Seed</th><th>Growth Stages</th><th>Bone Meal</th></tr></thead><tbody>
+ <tr><td>Wheat</td><td>Seeds (from grass)</td><td>7</td><td>Yes</td></tr>
+ <tr><td>Carrot</td><td>Carrot</td><td>7</td><td>Yes</td></tr>
+ <tr><td>Potato</td><td>Potato</td><td>7</td><td>Yes</td></tr>
+ <tr><td>Beetroot</td><td>Beetroot seeds</td><td>4</td><td>Yes</td></tr>
+ <tr><td>Melon</td><td>Melon seeds</td><td>Stem + fruit</td><td>No</td></tr>
+ <tr><td>Pumpkin</td><td>Pumpkin seeds</td><td>Stem + fruit</td><td>No</td></tr>
+ <tr><td>Sugar Cane</td><td>Sugar cane</td><td>3 blocks max</td><td>No</td></tr>
+ <tr><td>Cactus</td><td>Cactus</td><td>3 blocks max</td><td>No</td></tr>
+ <tr><td>Bamboo</td><td>Bamboo</td><td>12-16 blocks</td><td>Yes</td></tr>
+ <tr><td>Nether Wart</td><td>Nether wart</td><td>4</td><td>No</td></tr>
+ </tbody></table>
+ <h3 style="margin-top:24px">Best XP Farms</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🪦 Skeleton Spawner</h3><p>Find dungeon, drop chute. ~10-20 lvl/min.</p></div>
+ <div class="card"><h3>🔥 Blaze Farm</h3><p>Nether fortress spawner. ~15-25 lvl/min.</p></div>
+ <div class="card"><h3>⚡ Enderman Farm</h3><p>End island. ~30-50 lvl/min. Best post-dragon.</p></div>
+ <div class="card"><h3>🤖 Creeper Farm</h3><p>Multilayer dark room. ~10-20 lvl/min.</p></div>
+ <div class="card"><h3>🪟 Guardian Farm</h3><p>Ocean monument. ~50-80 lvl/min.</p></div>
+ </div>
+ <div class="card" style="margin-top:16px"><h3>Villager Trading</h3><p><strong>Librarian:</strong> Mending, Sharpness V books. <strong>Armorer:</strong> Diamond armor. <strong>Toolsmith:</strong> Diamond tools. <strong>Farmer:</strong> Best emerald source. <strong>Tip:</strong> Cure zombie villager for permanent discounts.</p></div>
+ <div class="ad-slot">AdSense - Farming Section</div>
+ </section>
+ 
+ <!-- REDSTONE -->
+ <section class="section" id="s-redstone">
+ <h2 class="section-title">🔴 Redstone Basics</h2>
+ <p class="section-desc">Learn redstone from the ground up. Components, logic gates, machines and contraptions.</p>
+ <div class="callout"><p><strong>1 redstone tick</strong> = 0.1s = 2 game ticks. Repeater default = 1 tick delay.</p></div>
+ <h3>Core Components</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🔴 Redstone Dust</h3><p>Transmits power 15 blocks. Signal drops 1/block.</p></div>
+ <div class="card"><h3>🕯️ Redstone Torch</h3><p>Infinite power. Inverts signal.</p></div>
+ <div class="card"><h3>🔁 Repeater</h3><p>Restores full signal. Delays 1-4 ticks.</p></div>
+ <div class="card"><h3>⚖️ Comparator</h3><p>Compare (A≥B) or Subtract (A-B).</p></div>
+ <div class="card"><h3>⬆️ Piston</h3><p>Pushes 12 blocks. Sticky piston pulls back.</p></div>
+ <div class="card"><h3>👁️ Observer</h3><p>1-tick pulse when block in front changes.</p></div>
+ </div>
+ <h3 style="margin-top:24px">Simple Contraptions</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🚪 2x2 Door</h3><p>Two sticky pistons stacked.</p></div>
+ <div class="card"><h3>🌾 Auto Farm</h3><p>Observer + piston + water flush.</p></div>
+ <div class="card"><h3>⬆️ Elevator</h3><p>Sticky pistons + slime blocks.</p></div>
+ <div class="card"><h3>🔄 Item Sorter</h3><p>Hopper + comparator.</p></div>
+ <div class="card"><h3>⏱️ Timer</h3><p>Hopper clock or repeater loop.</p></div>
+ <div class="card"><h3>🔒 Combo Lock</h3><p>RS latches + comparators.</p></div>
+ </div>
+ <div class="ad-slot">AdSense - Redstone Section</div>
+ </section>
+ 
+ <!-- SURVIVAL -->
+ <section class="section" id="s-survival">
+ <h2 class="section-title">🏕️ Survival Tips</h2>
+ <p class="section-desc">From your first day to end-game domination — practical survival strategies for Minecraft 1.21.</p>
+ <h3>Day 1 — Survive Your First Night</h3>
+ <div class="card"><ol><li>Punch a tree for 3-4 logs. Craft planks and crafting table.</li><li>Make wooden pickaxe → mine 3 stone → stone tools and sword.</li><li>Kill sheep for wool (or spider for string) to make a bed.</li><li>Collect food: kill animals, break grass for seeds.</li><li>Build shelter: dig into a hill or build cobblestone hut. Light with torches.</li><li>No bed? Camp in shelter with furnace, wait out the night.</li></ol></div>
+ <h3 style="margin-top:24px">Nether Preparation</h3>
+ <div class="card"><p>Full iron armor minimum (diamond preferred). Blocks (cobblestone). Fire resistance potion. Lighter (flint &amp; steel). Food, torches, pickaxe, shield. <strong>Priority:</strong> Find fortress (blaze rods), collect gold (barter with piglins), locate bastion for debris.</p></div>
+ <h3 style="margin-top:24px">Pro Combat Tips</h3>
+ <div class="grid-3">
+ <div class="card"><h3>🛡️ Shield</h3><p>Blocks ALL melee damage and 1/3 arrows. Essential.</p></div>
+ <div class="card"><h3>⚡ Critical Hits</h3><p>Jump + attack while falling = 1.5x damage.</p></div>
+ <div class="card"><h3>💧 Water Bucket</h3><p>Break falls, turn lava to obsidian. Carry always.</p></div>
+ </div>
+ <div class="ad-slot">AdSense - Survival Section</div>
+ </section>
+ 
+ <!-- NETHER & END -->
+ <section class="section" id="s-nether">
+ <h2 class="section-title">🔥 Nether &amp; End Guide</h2>
+ <p class="section-desc">Master the Nether and End dimensions. Fortresses, bastions, ancient debris, dragon fight and end cities.</p>
+ <h3>Nether Guide</h3>
+ <div class="grid-2">
+ <div class="card"><h3>🔥 Nether Fortress</h3><p>Search Z-axis lines. Loot: blaze rods, wither skulls, nether wart, gold.</p></div>
+ <div class="card"><h3>🏛️ Bastion Remnant</h3><p>4 types. Loot: gold blocks, ancient debris, netherite template.</p></div>
+ <div class="card"><h3>💎 Ancient Debris</h3><p>Best at Y 15. Bed or strip mining. 1-3 per vein.</p></div>
+ </div>
+ <h3 style="margin-top:24px">Dragon Fight Guide</h3>
+ <div class="card"><p><strong>Prep:</strong> 12+ Eyes of Ender, full diamond with Blast Protection, Power IV bow, Sharpness V sword, Slow Falling pots, blocks, food. <strong>Fight:</strong> ① Destroy end crystals ② Shoot while flying ③ Melee when perching ④ Collect egg (piston trick).</p></div>
+ <h3 style="margin-top:24px">Elytra &amp; End Cities</h3>
+ <div class="grid-2">
+ <div class="card"><h3>🏰 End City</h3><p>Shulker shells → shulker boxes. End ship near tallest tower.</p></div>
+ <div class="card"><h3>🦅 Elytra</h3><p>End ship item frame. Rockets boost flight. Mending + Unbreaking III essential.</p></div>
+ </div>
+ <div class="ad-slot">AdSense - Nether &amp; End Section</div>
+ </section>
+ </main>
+ </div>
+ <footer><div class="container"><p>Minecraft Guide Hub — Not affiliated with Mojang Studios or Microsoft.</p><p style="margin-top:4px">Guide content &copy; Minecraft Guide Hub &middot; <a href="#">Privacy</a> &middot; <a href="#">Contact</a></p></div></footer>
+ <script>
+ document.querySelectorAll('[data-section]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();showSection(el.dataset.section)})});
+ function showSection(id){document.querySelectorAll('.section').forEach(function(s){s.classList.remove('active')});document.getElementById('s-'+id).classList.add('active');document.querySelectorAll('[data-section]').forEach(function(a){a.classList.remove('active')});document.querySelectorAll('[data-section="'+id+'"]').forEach(function(a){a.classList.add('active')});window.scrollTo({top:0,behavior:'smooth'})}
+ document.getElementById('searchInput').addEventListener('keydown',function(e){if(e.key==='Enter'){var q=e.target.value.toLowerCase().trim();if(!q)return;document.querySelectorAll('.section').forEach(function(s){s.classList.remove('active')});document.getElementById('s-home').classList.add('active');document.querySelectorAll('[data-section]').forEach(function(a){a.classList.remove('active')});document.querySelectorAll('[data-section="home"]').forEach(function(a){a.classList.add('active')});setTimeout(function(){var body=document.getElementById('s-home');body.innerHTML='<div class="hero"><h1><span>Search Results: "'+q+'"</span></h1><p style="color:var(--text3)">Matching content found across the site.</p></div><div id="searchResults"></div>';var results=document.getElementById('searchResults');var count=0;document.querySelectorAll('.section').forEach(function(sec){if(sec.id==='s-home')return;var text=sec.textContent.toLowerCase();if(text.includes(q)){var title=(sec.querySelector('h2, h3')||{}).textContent||sec.id.replace('s-','');var snippet=sec.textContent.substring(0,200).replace(new RegExp(q,'gi'),function(m){return '<mark>'+m+'</mark>'});var secId=sec.id.replace('s-','');results.innerHTML+='<div class="card" style="cursor:pointer" onclick="showSection(\''+secId+'\')"><h3>'+title+'</h3><p>'+snippet+'...</p></div>';count++}});if(count===0)results.innerHTML='<div class="card"><p>No results found. Try a different keyword.</p></div>'},100)}});
+ var sq=new URLSearchParams(window.location.search).get('q');if(sq)document.getElementById('searchInput').value=sq;
+ </script>
+ </body>
+ </html>
